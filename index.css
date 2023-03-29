@@ -1,0 +1,27 @@
+.item {
+    display: flex;
+    gap: 100px
+}
+
+img {
+    width: 200px;
+    border-radius: 30px;
+    height: 200px;
+}
+
+.name {
+    margin-top: 150px;
+}
+.image{margin-bottom: 30px;}
+
+.details_items{display: flex;
+gap: 50px;
+}
+
+.greet {display: inline-block;
+display: flex;
+gap:50px;
+
+}
+
+.greet a {text-decoration: none;}

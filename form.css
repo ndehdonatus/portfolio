@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.7;
+    width: 100%;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.wrapper {
+    background-color: bisque;
+    /* height: 100%; */
+}
+
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+    /* padding: 30px 0; */
+}
+
+.form {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+}
+
+.form input {
+    margin-top: 10px;
+}
+
+.gender {
+    padding: 20px;
+}
+
+.link :hover {
+    text-decoration: none;
+    color: rgb(191, 0, 255);
+}
