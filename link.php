@@ -12,7 +12,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="link.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -34,7 +34,7 @@ session_start();
 
     ?>
 
-    
+
     <?php
 
     $_fileToUpload   = $_SESSION["fileToUpload"];
@@ -61,7 +61,7 @@ session_start();
 
             <div class="details_items">
                 <a class="item" href="./link.php?item_id=<?php echo $row->id; ?>">
-                    <img class="item_img" src="./uploads/<?php echo $row->fileToUpload ?>" >
+                    <img class="item_img" src="./uploads/<?php echo $row->fileToUpload ?>">
 
 
                     <p>Welcome to <strong><?php echo $_myname ?></strong>'s link site</p>
@@ -69,15 +69,42 @@ session_start();
 
             </div>
 
-            <div "link">
-                <a href="https://instagram.com" target="_blank"><i class="uil uil-instagram"></i>Instagram</a>
-                <br>
-                <a href="https://twitter.com" target="_blank"><i class="uil uil-instagram"></i>Twitter</a>
-                <br>
-                <a href="https://facebook.com" target="_blank"><i class="uil uil-instagram"></i>Facebook</a>
-                <br>
-                <a href="https://wwwnwrfundforhealth.organ" target="_blank"><i class="uil uil-instagram"></i>NWRFHP(PIG)BAMENDA</a>
+            <div class="main">
+                <a href="https://www.instagram.com">
+                    <img src="./icons/instagram.svg" alt="">
+                    <i class="uil uil-instagram"></i>
+                </a>
+
+                <a href="https://www.twitter.com">
+                    <img src="./icons/twitter.svg" alt="">
+                    <i class="uil uil-twitter"></i>
+                </a>
+
+                <a href="https://www.whatsapp.com">
+                    <img src="./icons/whatsapp.svg" alt="">
+                    <i class="uil uil-whatsapp"></i>
+                </a>
+
+                <a href="https://www.facebook.com">
+                    <img src="./icons/facebook-f.svg" alt="">
+                    <i class="uil uil-facebook-f"></i>
+                </a>
+
+                <a href="https://www.linkedin.com">
+                    <img src="./icons/linkedin.svg" alt="">
+                    <i class="uil uil-linkedin"></i>
+                </a>
+
+
+                <div class="child">
+                    <a href="https://www.nwrfundforhealth.org">
+                        <img src="./icons/logo.jpg" alt="">
+                        <i class="uil uil-logo"></i>
+                    </a>
+                </div>
             </div>
+
+            <script src="./fonaws/js/all.js"></script>
 
             <?php
             // define variables and set to empty values
@@ -173,6 +200,13 @@ session_start();
                     <input type="text" id="email" name="email">
                 </div>
 
+                <div class="label">
+                    <label for="website">website: </label>
+                    <span class="error">* <?php echo $websiteErr; ?></span>
+
+                    <input type="website" id="website" name="website">
+                </div>
+
 
                 <div class="label">
                     <label for="comment">Comment:</label>
@@ -181,8 +215,7 @@ session_start();
                 </div>
 
                 <div class="label">
-                    <label> Gender:</label>
-                    <span class="error">* <?php echo $genderErr; ?></span>
+                    <h2>Select gender</h2>
 
                     <div class="gender">
                         <div class="option">
