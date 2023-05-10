@@ -1,0 +1,50 @@
+.del {
+    display: inline-block;
+    display: flex;
+    gap: 30px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    justify-content: center;
+
+}
+
+.del a {
+    text-decoration: none;
+}
+
+.header {
+    position: fixed;
+    z-index: 1;
+    /* width: 1000px; */
+    background-color: #f1f1f1;
+    border: 2px solid blue;
+    margin: 0 auto;
+    padding: 20px;
+    margin-left: 150px;
+
+
+}
+
+ol {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+h1 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.wrapper {
+    padding: 50px 0;
+}
+
+.main{column-count: 4;
+padding: 20px 50px;
+margin-top: 100px;
+align-self: auto;
+}

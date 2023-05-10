@@ -102,6 +102,11 @@ session_start();
                         <i class="uil uil-logo"></i>
                     </a>
                 </div>
+
+                <br><br>
+                <div class="info">
+                    <a href="./others.php">Click me</a>
+                </div>
             </div>
 
             <script src="./fonaws/js/all.js"></script>
@@ -163,7 +168,10 @@ session_start();
                     and  $gender
                 ) {
                     $insert = $conn->prepare("INSERT INTO my_user(username, email, gender, comment, website) VALUES(:username, :email, :gender, :comment, :website)");
+
+
                     $insert->execute([
+                        
                         ":username" => $username,
                         ":email" => $email,
                         ":gender" => $gender,
