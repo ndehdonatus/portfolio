@@ -86,7 +86,7 @@ session_start();
         </div>
 
 
-        <a href="./slide.php">Go to slide</a>
+        <!-- <a href="./slide.php">Go to slide</a> -->
     </div>
 
 </body>
